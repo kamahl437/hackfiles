@@ -7,6 +7,7 @@ network={
     psk="password"
     proto=RSN
     key_mgmt=WPA-PSK
-    pairwise=CCMP TKIP
-    group=CCMP TKIP
+    pairwise=CCMP
+    group=CCMP
+    auth_alg=OPEN
 }
