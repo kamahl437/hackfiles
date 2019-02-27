@@ -1,0 +1,46 @@
+//#define BLYNK_PRINT Serial
+#include <SPI.h>
+//#include <Ethernet.h>
+//#include <BlynkSimpleEthernet.h>
+//char auth[] = "";    // Write your Blynk project key here
+//WidgetLED led1(V1);   // Virtual LED to show status on App
+//WidgetLED led2(V2);
+//WidgetLED led3(V3);
+int sensor1 = 0;      // IR Sensors
+//int sensor2 = 3;
+//int sensor3 = 4;
+
+void setup()
+{
+    Serial.begin(9600);
+
+//  Blynk.begin(auth);         // Starting Blynk server and connecting to the cloud
+  
+//  pinMode(sensor3,INPUT);    // Setting sensors to input
+//  
+//  pinMode(sensor2,INPUT);
+  
+  pinMode(sensor1,INPUT);
+  pinMode(13, OUTPUT);
+   pinMode(12, OUTPUT);
+
+//  while (Blynk.connect() == false) {
+//    // Wait until connected
+//  }
+}
+ void loop() {  
+   int sensorval1 = digitalRead(sensor1); // Saving Values os sensors
+
+
+   Serial.println(sensorval1);
+   
+   if(sensorval1 == 0) {
+     digitalWrite(13, HIGH);
+     digitalWrite(12, LOW);
+   } else {
+     digitalWrite(13, LOW);
+     digitalWrite(12, HIGH);
+   }
+   delay(1000);
+
+}  
