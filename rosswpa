@@ -3,7 +3,7 @@ update_config=1
 country=US
 
 network={
-    ssid="ssid"
+    ssid="Beefnet (2.4GHz)"
     psk="password"
     proto=RSN
     key_mgmt=WPA-PSK
