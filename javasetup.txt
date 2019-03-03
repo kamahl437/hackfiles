@@ -54,10 +54,12 @@ verify your installation:
 'which java' should print something like 'usr/bin/java'.  If that works it means you have java and its location
 java -version should print some info about the installation.  This means you not only have java, but you can call it without it blowing up
 
+Wiring for pi needs manually checked out, compiled for this to work(this is sketchy looking but widely reccomended):
+http://wiringpi.com/download-and-install/
+
 Move your jar over to the pi:
 scp ParkingSensor.jar pi@raspberrypi.local:ParkingSensor.jar
 
-sudo java -cp ParkingSensor.jar:/opt/pi4j/lib/'*'
-
+sudo java -jar ParkingSensor.jar
 
 
