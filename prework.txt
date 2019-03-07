@@ -18,9 +18,9 @@ Terminal basics(needed for Raspberry Pi setup) -
 Open a Terminal(if you need help finding, refer to the link at the bottom)
 When typeing the below commands in single quotes('') press the enter key after the command.
 Type 'ls' and remember to press enter afterwards :)
-The listings are your directories(the contents of your current folder)
+The listing shows the directories and files in your current folder)
 type 'pwd'
-This will show you the directory you are in, and stands for 'present working directory
+This will show you the absolute path of directory you are in, and stands for "present working directory"
 type 'mkdir folderName'
 This will create a directory called 'folderName'
 Cd {the directory} will "change Directory" to the specified directory
