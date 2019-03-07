@@ -1,24 +1,40 @@
-Pre-works must - 
-Command line basics(how to start it up and ls)
-Language hello world
+Prework:
+
 Breadboard basics
 https://www.youtube.com/watch?v=fq6U5Y14oM4
 
+For Arduino Users:
+For C++ review the following but don't feel a need to execute locally
+https://www.geeksforgeeks.org/writing-first-c-program-hello-world-example/
 
+For the Raspberry Pi(advanced setup):
+For java, setup and execute the following (setup is included article):
+https://www.geeksforgeeks.org/beginning-java-programming-with-hello-world-example/
 
-Open a Terminal
-Type 'ls'
+For python run through the first 2 lessons, and more if you wish:
+https://www.learnpython.org/en/Hello,_World!
+
+Terminal basics(needed for Raspberry Pi setup) - 
+Open a Terminal(if you need help finding, refer to the link at the bottom)
+When typeing the below commands in single quotes('') press the enter key after the command.
+Type 'ls' and remember to press enter afterwards :)
 The listings are your directories(the contents of your current folder)
 type 'pwd'
-Will show you the directory you are in(present working directory)
-'mkdir folderName'
+This will show you the directory you are in, and stands for 'present working directory
+type 'mkdir folderName'
 This will create a directory called 'folderName'
 Cd {the directory} will "change Directory" to the specified directory
-In our case 'cd folderName'
+In our case type 'cd folderName'
 type 'pwd'
 what does it say now?
-Cd .. To go 'up' a level in the directory tree
-Ls to see the directories again
-Rm -r {directory} to delete a directory
-In our case rm -r folderName
+type 'cd ..' To go up a level in the directory tree.  
+.. always means one directory above where I am now, while a single . means my current directory
+type 'ls' to see the directories again.
+Rm -r {directory} will delete a directory.  
+In our case type 'rm -r folderName'.  This will delete our folder.
+Notice it asked if you were sure before it deleted the folder.  Using rm -rf {folder} will force delete and not ask you, so be careful!
+
+Additional resources can be found here:
+https://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line
+
 
