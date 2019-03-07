@@ -1,0 +1,24 @@
+Pre-works must - 
+Command line basics(how to start it up and ls)
+Language hello world
+Breadboard basics
+https://www.youtube.com/watch?v=fq6U5Y14oM4
+
+
+
+Open a Terminal
+Type 'ls'
+The listings are your directories(the contents of your current folder)
+type 'pwd'
+Will show you the directory you are in(present working directory)
+'mkdir folderName'
+This will create a directory called 'folderName'
+Cd {the directory} will "change Directory" to the specified directory
+In our case 'cd folderName'
+type 'pwd'
+what does it say now?
+Cd .. To go 'up' a level in the directory tree
+Ls to see the directories again
+Rm -r {directory} to delete a directory
+In our case rm -r folderName
+
