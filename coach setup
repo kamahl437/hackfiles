@@ -1,0 +1,12 @@
+flash an os on your sd card:
+
+
+
+use this link to get the OS loaded.  When you are downloading the OS get rasbian lite
+https://styxit.com/2017/03/14/headless-raspberry-setup.html
+after you have an os but before you take the card out, use these directions to to enable network over USB.
+navigate to the part of the page that says 'Say Bonjour' and download the bonjour drivers.
+After this navigate to 'Connect Your PC to Raspberry Pi Zero via USB' and follow their directions.
+https://www.makeuseof.com/tag/directly-connect-raspberry-pi-without-internet/
+
+After this, you can take the card out and insert it in to your pi zero.  insert a usb cable in to the port marked usb (not 'pwr in')
