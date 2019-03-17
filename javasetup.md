@@ -1,6 +1,6 @@
-java setup
+# java setup
 Download java and eclipse
-start workspace, make new maven project
+Start workspace, make new maven project
 Add to pom:
 
   <repositories>
@@ -62,7 +62,8 @@ Export as a runnable jar with the libraries packed in
 shell on to the pi and install java:
 sudo apt-get install oracle-java8-jdk
 
-also install the pi4j libs that allow you to talk to the gpio pins:
+
+The following shouldn't be necessary and should only be done if problems are found - install the pi4j libs that allow you to talk to the gpio pins:
 curl -s get.pi4j.com | sudo bash
 
 verify your installation:
