@@ -2,7 +2,7 @@
 Download java and eclipse
 Start workspace, make new maven project
 Add to pom:
-
+`
   <repositories>
 	<repository>
 		<id>oss-snapshots-repo</id>
@@ -21,10 +21,10 @@ Add to pom:
    <version>1.3-SNAPSHOT</version>
 </dependency>
   </dependencies>
-
+`
 Use code like this:
 
-
+`
 package UAHS.ParkingSensor;
 
 import com.pi4j.io.gpio.GpioController;
@@ -55,13 +55,14 @@ public class ParkingSensor {
 		    }
 		    }
 }
-
+`
 
 make a run config for the main method
 Export as a runnable jar with the libraries packed in
 shell on to the pi and install java:
+`
 sudo apt-get install oracle-java8-jdk
-
+`
 
 The following shouldn't be necessary and should only be done if problems are found - install the pi4j libs that allow you to talk to the gpio pins:
 curl -s get.pi4j.com | sudo bash
@@ -74,8 +75,11 @@ Wiring for pi needs manually checked out, compiled for this to work(this is sket
 http://wiringpi.com/download-and-install/
 
 Move your jar over to the pi:
+`
 scp ParkingSensor.jar pi@raspberrypi.local:ParkingSensor.jar
-
+`
+`
 sudo java -jar ParkingSensor.jar
+`
 
 
