@@ -2,7 +2,7 @@
 Download java and eclipse
 Start workspace, make new maven project
 Add to pom:
-`
+
   <repositories>
 	<repository>
 		<id>oss-snapshots-repo</id>
@@ -21,7 +21,7 @@ Add to pom:
    <version>1.3-SNAPSHOT</version>
 </dependency>
   </dependencies>
-`
+
 Use code like this:
 
 `
@@ -40,7 +40,7 @@ public class ParkingSensor {
 		        final GpioController gpio = GpioFactory.getInstance();
 
 		        final GpioPinDigitalOutput ledPin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_15);
-//		        final GpioPinDigitalOutput ledPin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_27);//this will be the input from the sensor
+
 
 		        /** Blink every second */
 		        ledPin.blink(1000, 15000);
