@@ -2,7 +2,7 @@
 Download java and eclipse
 Start workspace, make new maven project
 Add to pom:
-
+```
   <repositories>
 	<repository>
 		<id>oss-snapshots-repo</id>
@@ -21,10 +21,10 @@ Add to pom:
    <version>1.3-SNAPSHOT</version>
 </dependency>
   </dependencies>
-
+```
 Use code like this:
 
-`
+```
 package UAHS.ParkingSensor;
 
 import com.pi4j.io.gpio.GpioController;
@@ -55,7 +55,7 @@ public class ParkingSensor {
 		    }
 		    }
 }
-`
+```
 
 make a run config for the main method
 Export as a runnable jar with the libraries packed in
