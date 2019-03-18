@@ -1,0 +1,118 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Blynk",
+		"_postman_id": "eecad26a-66ab-bf56-fada-253a00ddc8b3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all project details",
+			"request": {
+				"url": "http://blynk-cloud.com/{{token}}/project",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Set Pin Attribute (to red)",
+			"request": {
+				"url": {
+					"raw": "http://blynk-cloud.com/{{token}}/update/v3?color=%23D3435C",
+					"protocol": "http",
+					"host": [
+						"blynk-cloud",
+						"com"
+					],
+					"path": [
+						"{{token}}",
+						"update",
+						"v3"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "%23D3435C",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Set Pin Attribute (to green)",
+			"request": {
+				"url": {
+					"raw": "http://blynk-cloud.com/{{token}}/update/v3?color=%2323C48E",
+					"protocol": "http",
+					"host": [
+						"blynk-cloud",
+						"com"
+					],
+					"path": [
+						"{{token}}",
+						"update",
+						"v3"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "%2323C48E",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Set Pin Value",
+			"request": {
+				"url": {
+					"raw": "http://blynk-cloud.com/{{token}}/update/v0?value=2",
+					"protocol": "http",
+					"host": [
+						"blynk-cloud",
+						"com"
+					],
+					"path": [
+						"{{token}}",
+						"update",
+						"v0"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
